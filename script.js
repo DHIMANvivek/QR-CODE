@@ -1,34 +1,42 @@
  'use-strict'
 
-function genQR(){
-    var gapi = "https://chart.apis.google.com/chart?cht=qr&chs=";
-    var myimage = document.getElementById("img");
-    var mytext = document.getElementById("qrtext").value;
-    var mysize = document.getElementById("size").value;
+function genQR()
+        {
+            var gapi="https://chart.googleapis.com/chart?chf=bg,s,65432100&cht=qr&chs=";
+            var myimg=document.getElementById("img");
+            var mytext=document.getElementById("qrtext").value;
+            var mysize=document.getElementById("size").value;
 
-    if(mytext!=""&& mysize=="100"){
+            if (mytext!=="" && mysize=="100")
+            {
+                myimg.src=gapi+"100x100"+"&chl="+mytext;
+                // https://chart.googleapis.com/chart?cht=qr&chs=100x100&chl=hello
+            }
 
-        myimage.src = gapi+"100x100"+"&ch1="+mytext;
-    }
-       else if(mytext!=""&& mysize=="150"){
+            else if(mytext!=="" && mysize=="150")
+            {
 
-        myimage.src = gapi+"150x150"+"&ch1="+mytext;
-    }
-     else  if(mytext!=""&& mysize=="200"){
+                myimg.src=gapi+"150x150"+"&chl="+mytext;
+            }
 
-        myimage.src = gapi+"200x200"+"&ch1="+mytext;
-    }
+            else if(mytext!=="" && mysize=="200")
+            {
+                myimg.src=gapi+"200x200"+"&chl="+mytext;
+            }
 
-    else  if(mytext!=""&& mysize=="250"){
+            else if (mytext!=="" && mysize=="250")
+            {
+                myimg.src=gapi+"250x250"+"&chl="+mytext;
+            }
 
-        myimage.src = gapi+"250x250"+"&ch1="+mytext;
-    }
+            else if (mytext!=="" && mysize=="300")
+            {
+                myimg.src=gapi+"300x300"+"&chl="+mytext;
+            }
 
-    else  if(mytext!=""&& mysize=="300"){
-
-        myimage.src = gapi+"300x300"+"&ch1="+mytext;
-    }
-    else{
-        alert("please enter text then click on button");
-    }
-}
+            else
+            {
+                alert("Please Enter Text");
+            }
+        
+        }
