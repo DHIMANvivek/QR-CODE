@@ -9,7 +9,7 @@ function genQR()
 
             if (mytext!=="" && mysize=="100")
             {
-                myimg.src=gapi+"100x100"+"&chl="+mytext;
+                myimg.src=gapi+"100x100"+"&chl="+"https://ropsten.etherscan.io/tx/"+mytext;
                 // https://chart.googleapis.com/chart?cht=qr&chs=100x100&chl=hello
             }
 
