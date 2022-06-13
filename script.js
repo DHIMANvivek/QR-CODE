@@ -16,22 +16,22 @@ function genQR()
             else if(mytext!=="" && mysize=="150")
             {
 
-                myimg.src=gapi+"150x150"+"&chl="+mytext;
+                myimg.src=gapi+"150x150"+"&chl="+"https://ropsten.etherscan.io/tx/"+mytext;
             }
 
             else if(mytext!=="" && mysize=="200")
             {
-                myimg.src=gapi+"200x200"+"&chl="+mytext;
+                myimg.src=gapi+"200x200"+"&chl="+"https://ropsten.etherscan.io/tx/"+mytext;
             }
 
             else if (mytext!=="" && mysize=="250")
             {
-                myimg.src=gapi+"250x250"+"&chl="+mytext;
+                myimg.src=gapi+"250x250"+"&chl="+"https://ropsten.etherscan.io/tx/"+mytext;
             }
 
             else if (mytext!=="" && mysize=="300")
             {
-                myimg.src=gapi+"300x300"+"&chl="+mytext;
+                myimg.src=gapi+"300x300"+"&chl="+"https://ropsten.etherscan.io/tx/"+mytext;
             }
 
             else
