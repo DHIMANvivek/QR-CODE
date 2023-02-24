@@ -27,7 +27,9 @@ function genQR()
 
             else if (mytext!=="" && mysize=="250")
             {
+             for(int j = 1 ; j <= i ; j++){
                 myimg.src=gapi+"250x250"+"&chl="+i;
+             }
             }
 
             else if (mytext!=="" && mysize=="300")
