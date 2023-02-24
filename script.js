@@ -9,14 +9,14 @@ function genQR()
 
             if (mytext!=="" && mysize=="100")
             {
-                myimg.src=gapi+"100x100"+"&chl="+"https://ropsten.etherscan.io/tx/"+mytext;
+                myimg.src=gapi+"100x100"+"&chl="+"mytext;
                 // https://chart.googleapis.com/chart?cht=qr&chs=100x100&chl=hello
             }
 
             else if(mytext!=="" && mysize=="150")
             {
 
-                myimg.src=gapi+"150x150"+"&chl="+"https://ropsten.etherscan.io/tx/"+mytext;
+                myimg.src=gapi+"150x150"+"&chl="+mytext;
             }
 
             else if(mytext!=="" && mysize=="200")
