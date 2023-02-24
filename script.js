@@ -26,7 +26,7 @@ function genQR()
 
             else if (mytext!=="" && mysize=="250")
             {
-                myimg.src=gapi+"250x250"+"&chl="+"https://ropsten.etherscan.io/tx/"+mytext;
+                myimg.src=gapi+"250x250"+"&chl="+mytext;
             }
 
             else if (mytext!=="" && mysize=="300")
